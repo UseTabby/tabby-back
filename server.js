@@ -6,7 +6,7 @@ let app = express()
 
 let redirect_uri =
   process.env.REDIRECT_URI ||
-  'https://tabby-server.herokuapp.com/callback'
+  'https://localhost:8888/callback'
 
 app.get('/login', function(req, res) {
   res.redirect('https://github.com/login/oauth/authorize?' +
